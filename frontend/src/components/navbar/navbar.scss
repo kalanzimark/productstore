@@ -1,0 +1,141 @@
+.nav-container {
+    color: red;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-button-wrapper {
+    display: none;
+}
+.navClose-btn {
+    font-size: 24px;
+}
+.desktop-logo {
+    display: none;
+}
+
+@media screen and (max-width: 780px) {
+    .nav-container {
+        display: block;
+    }
+
+    .nav-button-wrapper {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.411);
+        position: absolute;
+        width: 100%;
+        display: flex;
+        padding-inline: 1em;
+        padding-block: 0.5em 0.5em;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            color: red;
+        }
+        .mobile-logo-wrapper {
+            width: 60px;
+            height: 50px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 26%;
+            }
+        }
+    }
+}
+
+.nav-wrapper {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: black;
+    display: grid;
+    place-content: center;
+    position: absolute;
+    z-index: 6;
+    width: 100%;
+    height: 0;
+    transition: all 0.5s ease;
+}
+.nav-list {
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding: 0;
+    gap: 3em;
+
+    li {
+        cursor: pointer;
+
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+    }
+}
+.show-nav {
+    height: 100vh;
+}
+.show-nav-list {
+    display: flex;
+}
+@media screen and (min-width: 781px) {
+    .nav-wrapper {
+        background-color: rgba(0, 0, 0, 0.452);
+        position: relative;
+        height: auto !important;
+        width: auto !important;
+        border: 1px solid white;
+        border-radius: 10px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-block: 0.5em;
+        padding-inline: 3em;
+
+        .nav-list {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-block: 10px;
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+        .desktop-logo {
+            display: block;
+            font-size: 7px;
+        }
+        .desk-logo {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            p {
+                text-transform: capitalize;
+                color: white;
+                margin: 0;
+            }
+            .desk-image {
+                height: 50px;
+                width: 50px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: 30%;
+                }
+            }
+        }
+    }
+}
+// Latest

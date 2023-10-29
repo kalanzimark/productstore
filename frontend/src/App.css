@@ -1,0 +1,126 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body {
+    margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    font-family: "Poppins", sans-serif !important;
+}
+a {
+    text-decoration: none;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 60px;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header ul li {
+    margin-left: 20px;
+}
+
+img,
+picture {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.product_card {
+    max-width: 400px;
+    min-height: 485px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 6px 6px 13px -3px rgba(0, 0, 0, 0.72);
+    -webkit-box-shadow: 6px 6px 13px -3px rgba(0, 0, 0, 0.72);
+    -moz-box-shadow: 6px 6px 13px -3px rgba(0, 0, 0, 0.72);
+}
+.product_image {
+    min-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+.product_card-info {
+    margin-inline: 10px;
+}
+.products_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding-bottom: 1em;
+}
+.title {
+    text-align: center;
+    padding-top: 2em;
+}
+.product {
+    flex-basis: 400px;
+}
+
+.button_wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+button {
+    display: block;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+}
+.delete {
+    background-color: red;
+}
+.update {
+    background-color: green;
+}
